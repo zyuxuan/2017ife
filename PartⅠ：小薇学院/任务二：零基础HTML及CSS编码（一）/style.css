@@ -85,12 +85,10 @@ tr.tr-final {
 	font-size: 1em;
 }
 .input-align {
-	display: inline-block;
-	position: relative;
-	left: 30%;
-}
-.span-align {
-	position: absolute;
-	left: 130px;
 	
+}
+.label {
+	float: left;
+	width: 300px;
+	text-align: right;
 }

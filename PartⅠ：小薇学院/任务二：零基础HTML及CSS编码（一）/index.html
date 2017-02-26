@@ -172,32 +172,51 @@
 	<div class="page">
 	<h2 style="border-left: 3px solid gray;padding-left: 10px;">这里以后是一个侧栏，这是侧栏的标题</h2>
 	
-	<form action="#" style="line-height: 30px;">
-		<span class="span-align">请输入邮箱地址：</span><input type="text" placeholder="这是一个文本输入框" class="input-align" required>
+	<form action="#">
+		<div>
+			<label class="label" for="email" style="text-align: right;">请输入邮箱地址：</label><input type="text" placeholder="这是一个文本输入框" class="input-align" id="email" required>
+		</div>
 	<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small style="color: darkgray;position: relative;left: 20%;">邮箱地址请按要求格式输入</small>
+	<p style="color: darkgray;margin-left: 300px;">邮箱地址请按要求格式输入</p>
 	<br>
-		<span class="span-align">请输入密码:</span><input type="password" placeholder="这是一个文本输入框" pattern="[0-9,A-z]{6,16}" class="input-align" required>
+	<div>
+		<label for="password" class="label">请输入密码：</label><input type="password" placeholder="这是一个文本输入框" pattern="[0-9,A-z]{6,16}" class="input-align" id="password" required>
+	</div>
 	<br>
-	<span class="span-align">请重复输入密码：</span><input type="password" placeholder="这是一个文本输入框" class="input-align" required>
+	<div>
+		<label class="label" for="re-password">请重复输入密码：</label><input type="password" id="re-password" placeholder="这是一个文本输入框" class="input-align" required>
+	</div>
 	<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small style="color: darkgray;position: relative;left: 20%;">密码请为6-16位英文数字</small>
+	<p style="color: darkgray;margin-left: 300px;">密码请为6-16位英文数字</p>
 	<br>
-	<span class="span-align">性别：</span><span class="input-align"><input type="radio" name="sex" checked>男 <input type="radio" name="sex">女</span>
+	<div>
+		<span class="label">性别：</span><span class="input-align"><input type="radio" name="sex" checked>男 <input type="radio" name="sex">女</span>
+	</div>
 	<br>
-	<span class="span-align">城市：</span><select name="city" id="city" class="input-align">
-		<option value="Beijing">北京</option>
-		<option value="Shanghai">上海</option>
-		<option value="Guangzhou">广州</option>
-		<option value="Changsha">长沙</option>
-		<option value="Chengdu">成都</option>
-	</select>
+	<div>
+		<span class="label">城市：</span>
+		<select name="city" id="city" class="input-align">
+			<option value="Beijing">北京</option>
+			<option value="Shanghai">上海</option>
+			<option value="Guangzhou">广州</option>
+			<option value="Changsha">长沙</option>
+			<option value="Chengdu">成都</option>
+		</select>
+	</div>
 	<br>
-	<span class="span-align">爱好：</span><span class="input-align"><input type="checkbox" name="hobby">运动 
-	<input type="checkbox" name="hobby">艺术 
-	<input type="checkbox" name="hobby">科学 </span>
+	<div>
+		<span class="label">爱好：</span>
+		<span class="input-align">
+			<input type="checkbox" name="hobby">运动 
+			<input type="checkbox" name="hobby">艺术 
+			<input type="checkbox" name="hobby">科学 
+		</span>
+	</div>
 	<br>
-	<span class="span-align">个人描述：</span><textarea name="desc" id="desc" cols="20" rows="2" placeholder="这是一个多行输入框，输入您的个人描述" class="input-align"></textarea>
+	<div>
+		<span class="label">个人描述：</span>
+		<textarea name="desc" id="desc" cols="20" rows="2" placeholder="这是一个多行输入框，输入您的个人描述" class="input-align"></textarea>
+	</div>
 	<br>
 	
 	<button>
